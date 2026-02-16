@@ -1,0 +1,88 @@
+import React, { useRef } from 'react'
+import './Testimonials.css'
+import next_icon from '../../assets/next-icon.png'
+import back_icon from '../../assets/back-icon.png'
+import user_1 from '../../assets/user-1.png'
+import user_2 from '../../assets/user-2.png'
+import user_3 from '../../assets/user-3.png'
+import user_4 from '../../assets/user-4.png'
+
+const Testimonials = () => {
+
+    const slider = useRef();
+    let tx = 0;
+
+const slideForward = ()=>{
+    if(tx > -50){
+        tx -= 25;
+    }
+    slider.current.style.transform = `translateX(${tx}%)`;
+}
+const slideBackward = ()=>{
+    if(tx < 0){
+        tx += 25;
+    }
+    slider.current.style.transform = `translateX(${tx}%)`;
+}
+
+  return (
+    <div className='testimonials' id='blog'>
+      <img src={next_icon} alt="" className='next-btn' onClick={slideForward}/>
+      <img src={back_icon} alt="" className='back-btn' onClick={slideBackward}/>
+      <div className="slider">
+        <ul ref={slider}>
+            <li>
+                <div className="slide">
+                    <div className="user-info">
+                        <img src={user_1} alt="" />
+                        <div>
+                            <h3>Emily Williams</h3>
+                            <span>Structur Des, USA</span>
+                        </div>
+                    </div>
+                    <p>Fortune Facade Solutions delivered excellent workmanship with strong attention to detail. Their team was professional, responsive, and completed the project within the committed timeline.</p>
+                </div>
+            </li>
+            <li>
+                <div className="slide">
+                    <div className="user-info">
+                        <img src={user_2} alt="" />
+                        <div>
+                            <h3>William Jackson</h3>
+                            <span>Edusity, USA</span>
+                        </div>
+                    </div>
+                    <p>HPL and ACP provide exceptional weather and impact resistance, making them suitable for India's varied climates.We transform ideas into detailed plans and plans into breathtaking spaces.</p>
+                </div>
+            </li>
+            <li>
+                <div className="slide">
+                    <div className="user-info">
+                        <img src={user_3} alt="" />
+                        <div>
+                            <h3>Mithila</h3>
+                            <span>Designer, UAE</span>
+                        </div>
+                    </div>
+                    <p>Choosing to pursue my degree at Edusity was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.</p>
+                </div>
+            </li>
+            <li>
+                <div className="slide">
+                    <div className="user-info">
+                        <img src={user_4} alt="" />
+                        <div>
+                            <h3>Willser Jack</h3>
+                            <span>architect, ENG</span>
+                        </div>
+                    </div>
+                    <p>Every great structure begins with thoughtful planning and purposeful design.Smart design isn’t just about beauty — it’s about strategy, structure, and sustainability.Louvers and glass optimize energy use through sunlight management and insulation.</p>
+                </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+  )
+}
+
+export default Testimonials
