@@ -36,7 +36,7 @@ const Footer = () => {
       </div>
 
     <div className='footers'>
-      <p>© 2024 Edusity. All rights reserved.</p>
+      <p>© 2024 Facade. All rights reserved.</p>
     </div>
     <div className='terPri'>
        <div>
