@@ -1,0 +1,13 @@
+.whatsapp-btn {
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    transform: rotate(-15deg) scale(1.2);
+}
+
+/* Icon styling */
+.whatsapp-icon {
+    color: #25D366;
+    font-size: 35px !important;
+}

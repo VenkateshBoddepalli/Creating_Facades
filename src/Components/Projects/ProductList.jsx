@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import "./ProductList.css";
 
 import LayersIcon from "@mui/icons-material/Layers";
@@ -70,6 +70,26 @@ const ProductList = () => {
                 and sleek curtain wall designs.
               </p>
             </div>
+
+             <div className="card">
+              <WindowIcon className="icon" />
+              <h3>Baffle Ceiling</h3>
+              <p>
+                IGUs and tinted glass for thermal efficiency, natural light,
+                and sleek curtain wall designs.
+              </p>
+            </div>
+
+
+             <div className="card">
+              <WindowIcon className="icon" />
+              <h3>Facade Designing</h3>
+              <p>
+                Designing and tinted Designing for thermal efficiency, natural light,
+                and sleek curtain wall designs.
+              </p>
+            </div>
+
           </div>
         )}
 

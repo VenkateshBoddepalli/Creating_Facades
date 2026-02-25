@@ -3,10 +3,11 @@ import './Navbar.css'
 import logo from '../../assets/logo.png'
 import menu_icon from '../../assets/menu-icon.png'
 import { Link } from 'react-scroll';
-import { motion } from "motion/react"
-
+import { motion } from "motion/react";
+import { Link as RouterLink } from "react-router-dom";
 import PhoneIcon from '@mui/icons-material/Phone';
-import { IconButton } from '@mui/material'; 
+import { IconButton } from '@mui/material';
+import WhatAppButton from "../../Components/Whatsappicon/WhatsAppButton";
 
 
 const Navbar = () => {
@@ -29,32 +30,55 @@ const Navbar = () => {
 
   return (
     <motion.nav initial={{opacity: 0, y: -50}} animate={{opacity: 1, y: 0}} transition={{duration: 0.6, ease:"easeOut"}} className={`container ${sticky? 'dark-nav' : ''}`}>
+      
+  <img
+    src={menu_icon}
+    alt=""
+    className='menu-icon'
+    onClick={toggleMenu}
+    style={{zIndex: 1500, }}
+  />
       <img src={logo} alt="" className='logo' />
       <ul className={mobileMenu?'':'hide-mobile-menu'}>
         <li><Link to='hero' smooth={true} offset={0} duration={500}>Home</Link></li>
         <li><Link to='services' smooth={true} offset={-260} duration={500}>Services</Link></li>
-        {/* <li><Link to="products" smooth={true} offset={-260} duration={500}>Products</Link></li> */}
+{/* 
+        <li><Link to="glassfacade" smooth={true} offset={-260} duration={500}>Glass Facade</Link></li>
+        <li><Link to="hplcladding" smooth={true} offset={-260} duration={500}>HPL Cladding</Link></li>
+        <li><Link to="acpcladding" smooth={true} offset={-260} duration={500}>ACP Cladding</Link></li>
+        <li><Link to="baffleceiling" smooth={true} offset={-260} duration={500}>Baffle Ceiling</Link></li>
+         <li><Link to="facadedesigning" smooth={true} offset={-260} duration={500}>Facade Designing</Link></li> */}
+
         <li><Link to='about' smooth={true} offset={-150} duration={500}>About us</Link></li>
         <li><Link to='project' smooth={true} offset={-260} duration={500}>Projects</Link></li>
         <li><Link to='blog' smooth={true} offset={-260} duration={500}>Blog</Link></li>
+        <li><RouterLink to="/productsList">Products</RouterLink></li>
         <li><Link to='contact' smooth={true} offset={-260} duration={500} className='btn'>Get In Touch</Link></li>
       </ul>
 
-      <IconButton
-        component="a"
-        href={`tel:${phoneNumber}`}
-        style={{
-          backgroundColor: "#fff",
-          color: "#3c09f3",
-          padding: "10px",
-          borderRadius: "50%",
-          // marginLeft:"-170px"
-         }}
-      >
-         <PhoneIcon style={{ fontSize: "22px" }} />
-      </IconButton>
+      {/* <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu} style={{zIndex: 1500, }}/> */}
+    
+  <div className="right-icons">
 
-      <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu}/>
+  <WhatAppButton />
+
+  <IconButton
+    component="a"
+    href={`tel:${phoneNumber}`}
+    className="phone-btn"
+  >
+    <PhoneIcon />
+  </IconButton>
+{/* 
+  <img
+    src={menu_icon}
+    alt=""
+    className='menu-icon'
+    onClick={toggleMenu}
+    style={{zIndex: 1500, }}
+  /> */}
+</div>
+    
     </motion.nav>
   )
 }

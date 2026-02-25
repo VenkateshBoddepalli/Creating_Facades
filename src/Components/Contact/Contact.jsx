@@ -9,7 +9,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
-const Contact = () => {
+const Contact = ({closeModal}) => {
 
     const [result, setResult] = React.useState("");
 
@@ -32,6 +32,10 @@ const Contact = () => {
         toast.success("Message sent successfully!")
         setResult(res.message);
         event.target.reset();
+
+        setTimeout(() => {
+        if (closeModal) closeModal();
+        }, 5000);
       } else {
         console.log("Error", res);
         toast.error("Something went wrong!")
@@ -57,9 +61,13 @@ const Contact = () => {
             <input type="text" name='name' placeholder='Enter your name' required/>
             <label>Phone Number</label>
             <input type="tel" name='phone' placeholder='Enter your mobile number' required/>
+            <label>Your from</label>
+            <input type="text" name='your from' placeholder='Enter your place' required/>
+            <label>Company name</label>
+            <input type="text" name='company name' placeholder='Enter your company name' required/>
             <label>Write your messages here</label>
-            <textarea name="message" rows="6" placeholder='Enter your message' required></textarea>
-            <button type='submit' className='btn dark-btn'>Submit now <img src={white_arrow} alt="" /></button>
+            <textarea name="message" rows="5" placeholder='Enter your message' required></textarea>
+            <button type='submit' className='btn dark-btn' >Submit now <img src={white_arrow} alt="" /></button>
         </form>
         <span>{result}</span>
         <ToastContainer position="top-right" autoClose={3000} />
