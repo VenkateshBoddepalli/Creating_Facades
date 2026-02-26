@@ -111,45 +111,7 @@ const Projects = () => {
       </section>
 
       {/* FOOTER */}
-      <footer className="footer">
-        <div className="footer-container">
-          <div className="footer-brand">
-            <h2>Fortune Faced</h2>
-            <p>
-              We design and build with excellence, precision, and innovation.
-            </p>
-          </div>
-
-          <div className="footer-links">
-            <div>
-              <h4>Navigation</h4>
-              <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Services</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4>Services</h4>
-              <ul>
-                <li>Interior</li>
-                <li>Exterior</li>
-                <li>Bridge</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4>Contact</h4>
-              <ul>
-                <li>+10 267 3567 267</li>
-                <li>contact@fortunefaced.com</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
+      <footer>
         <div className="footer-bottom">
           © {new Date().getFullYear()} Fortune Faced. All Rights Reserved.
         </div>

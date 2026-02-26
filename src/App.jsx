@@ -63,7 +63,7 @@ const App = () => {
                     >
                       ✖
                     </button>
-                    <Contact  closeModal={() => setShowMobileForm(false)}/>
+                    <Contact closeModal={() => setShowMobileForm(false)} />
                   </div>
                 </div>
               )}

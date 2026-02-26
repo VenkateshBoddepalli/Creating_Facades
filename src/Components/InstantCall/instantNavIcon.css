@@ -1,0 +1,23 @@
+.video-icon-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.video-icon-btn {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white !important;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 8px 20px rgba(190, 78, 78, 0.2);
+  transition: all 0.3s ease;
+}
+
+.video-icon-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #4338ca, #4f46e5);
+}
+
+.video-icon {
+  font-size: 40px !important;
+}

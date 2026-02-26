@@ -1,4 +1,6 @@
-nav{
+/* ================= NAVBAR BASE ================= */
+
+nav {
     width: 100%;
     color: #fff;
     padding: 0px 40px;
@@ -9,36 +11,47 @@ nav{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-}
-.logo{
-    width: 100px;
+    transition: 0.4s ease;
 }
 
-nav ul{
+/* .logo {
+    width: 80px;
+} */
+
+.logo {
+    width: 100px;          /* good desktop size */
+    height: auto;          /* keep aspect ratio */
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    border-radius:30px;
+}
+
+/* Smooth hover effect */
+.logo:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+/* ================= MENU ================= */
+
+nav ul {
     display: flex;
     align-items: center;
-    gap: 50px;
-    margin: 0px;
-    padding: 0px;
-}
-nav ul li{
-    /* display: inline-block;
-    list-style: none;
-    margin: 5px 20px;
-    font-size: 16px; */
-    list-style: none;
-    font-size: 16px;
-    position:relative;
-    cursor: pointer;
-}
-.dark-nav{
-    background: #212EA0;
-    transition: 0.5s;
-}
-.menu-icon{
-    display: none;
+    gap: 42px;
+    margin: 0;
+    padding: 0;
 }
 
+nav ul li {
+    list-style: none;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Hover underline */
 nav ul li::after {
     content: "";
     position: absolute;
@@ -54,96 +67,149 @@ nav ul li:hover::after {
     width: 100%;
 }
 
-/* Icon alignment */
-.nav-icons {
-    vertical-align: middle;
+/* Sticky background */
+.dark-nav {
+    background: #212EA0;
 }
 
-.phone-btn {
-    background-color: #fff !important;
-    color: #3c09f3 !important;
-    padding: 2px !important;
-    border-radius: 50% !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
- .phone-btn:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
- }
+/* ================= RIGHT ICONS ================= */
 
-/* Right side icon container */
 .right-icons {
     display: flex;
     align-items: center;
     gap: 25px;
 }
 
-/* ----- media query ----------- */
+/* Phone Button */
+.phone-btn {
+    background-color: #fff !important;
+    color: #3c09f3 !important;
+    border-radius: 50% !important;
+    transition: 0.3s ease !important;
+    width: 30px;      
+    height: 30px;     
+    padding: 5px !important;
+}
 
-@media (max-width: 1000px){
-    .logo{
-        width: 140px;
+.phone-btn:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 12px rgba(60, 9, 243, 0.5);
+}
+
+/* Get In Touch Button (if added to right side) */
+.nav-contact-btn {
+    background: #fff;
+    color: #212EA0;
+    padding: 7px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    text-decoration: none;
+    margin-right: -80px;
+}
+
+.nav-contact-btn:hover {
+    background: #e5e7ff;
+    transform: translateY(-2px);
+}
+
+/* Menu icon hidden on desktop */
+.menu-icon {
+    display: none;
+}
+
+/* ========================= */
+/* ===== TABLET VIEW ======= */
+/* ========================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        padding: 0 25px;
     }
-    nav ul li{
-        margin: 10px 15px;
+
+    .logo {
+        width: 110px;
+    }
+
+    nav ul {
+        gap: 25px;
     }
 }
 
+/* ========================= */
+/* ===== MOBILE VIEW ======= */
+/* ========================= */
 
-@media (max-width: 840px){
+@media (max-width: 840px) {
 
-    nav{
-        /* justify-content: flex-start;
-        padding: 0px 20px; */
-        display: flex;
-        align-items: center;
-        justify-content: space-between; /* keep left & right separation */
+    nav {
         padding: 0 20px;
     }
 
-    nav ul{
+    /* Show hamburger */
+    .menu-icon {
+        display: block;
+        width: 28px;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    /* Slide menu */
+    nav ul {
         position: fixed;
         top: 0;
-        /* right: 0px; */
-        left: 0px;
+        left: -220px;
         bottom: 0;
+        width: 200px;
         background: #212EA0;
-        z-index: 1000;
-        width: 180px;
-        padding-top: 85px;
-        transition: 0.5s;
-
-        display: flex;
+        padding-top: 90px;
+        padding-left: 20px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 20px;
+        gap: 25px;
+        transition: 0.4s ease;
     }
 
-    nav ul li{
-        display: block;
-        margin: 0px, 0px, 0px, 0px;
+    nav ul li {
+        font-size: 15px;
     }
 
-    .menu-icon{
-        display: block;
-        width: 30px;
-        cursor: pointer;
-        margin-right: 15px;
+    /* When menu active */
+    nav ul:not(.hide-mobile-menu) {
+        left: 0;
     }
 
+    .hide-mobile-menu {
+        left: -220px;
+    }
+
+    /* Right icons spacing smaller */
     .right-icons {
-        display: flex;
-        align-items: center;
-        gap: 15px;
+        gap: 12px;
     }
-    /* .right-icons{
-        display: none;
-    } */
 
-    .phone-btn {
-    padding: 3px !important;
+    /* Hide Get In Touch text on small screens */
+    .nav-contact-btn {
+        display: none;
     }
-    .hide-mobile-menu{
-        left: -200px;
+
+    /* Make phone smaller */
+    .phone-btn {
+        padding: 4px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .logo {
+        height: 48px;
+    }
+}
+
+@media (max-width: 840px) {
+    .logo {
+        height: 42px;
+        margin-left: -100px;
     }
 }

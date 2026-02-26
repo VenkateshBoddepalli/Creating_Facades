@@ -19,6 +19,14 @@
   letter-spacing: 3px;
   color: #333;
 }
+.footerimg{
+    width: 100px;  
+    height: auto;          
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    border-radius:30px;
+}
 
 /* Social Icons */
 .footer-social {
