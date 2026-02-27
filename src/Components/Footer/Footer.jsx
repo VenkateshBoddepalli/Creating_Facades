@@ -1,5 +1,5 @@
 import React from "react";
-import footericon from "../../assets/footericon.jpeg";
+import logo from "../../assets/logo.png";
 import "./Footer.css";
 import {
   FaFacebookF,
@@ -17,9 +17,9 @@ const Footer = () => {
 
         {/* Logo Section */}
         <div className="footer-logo">
-          <img src={footericon} alt="Creative Facades Logo"  className="footerimg"/>
-          <h6>CREATIVE</h6>
-          <h6>FACADES</h6>
+          <img src={logo} alt="Creative Facades Logo"  className="footerimg"/>
+          <p className="creative">CREATIVE</p>
+          <p className="facades">FACADES</p>
         </div>
 
         {/* Social Icons */}
@@ -42,10 +42,10 @@ const Footer = () => {
       </div>
 
       <div className="footers">
-        <p>© 2024 Creative Facades. All rights reserved.</p>
+        <p>© 2026 Creative Facades. All rights reserved.</p>
       </div>
 
-      <div className="terPri">
+      {/* <div className="terPri">
         <div className="terms">
           <a href="#" target="_blank" rel="noopener noreferrer">
             Terms of Services
@@ -56,7 +56,7 @@ const Footer = () => {
             Privacy Policy
           </a>
         </div>
-      </div>
+      </div> */}
 
     </footer>
   );

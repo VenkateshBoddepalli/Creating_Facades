@@ -59,7 +59,7 @@ const Contact = ({closeModal}) => {
         <form onSubmit={onSubmit}>
             <label>Your name</label>
             <input type="text" name='name' placeholder='Enter your name' required/>
-            <label>Phone Number</label>
+            <label>Phone number</label>
             <input type="tel" name='phone' placeholder='Enter your mobile number' required/>
             <label>Your from</label>
             <input type="text" name='your from' placeholder='Enter your place' required/>

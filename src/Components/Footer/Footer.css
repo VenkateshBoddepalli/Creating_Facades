@@ -81,6 +81,23 @@
   margin-top: 25px;
 }
 
+.creative {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0px;
+  color: #050507;
+  margin-top: -22px;
+  font-family: 'Poppins', sans-serif;
+}
+.facades {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #050408;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
 /* .terPri{
   background-color: red;
 } */
@@ -106,6 +123,16 @@
 
   .footer-subscribe input {
     width: 100%;
+  }
+
+  .creative {
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+
+  .facades {
+    font-size: 18px;
+    letter-spacing: 0px;
   }
 
   .terPri{

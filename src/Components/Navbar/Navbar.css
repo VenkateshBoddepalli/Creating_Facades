@@ -28,10 +28,10 @@ nav {
 }
 
 /* Smooth hover effect */
-.logo:hover {
-    transform: scale(1.05);
+/* .logo:hover {
+    transform: scale(1.6);
     opacity: 0.9;
-}
+} */
 
 
 /* ================= MENU ================= */
@@ -208,8 +208,11 @@ nav ul li:hover::after {
 }
 
 @media (max-width: 840px) {
-    .logo {
-        height: 42px;
-        margin-left: -100px;
+   
+       .logo {
+        height: 65px;      
+        width: auto;       
+        object-fit: contain;
+        margin-left: -115px;  
     }
 }
