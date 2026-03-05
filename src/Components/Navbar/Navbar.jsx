@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
-// import logos from "../../assets/logos.png";
 import menu_icon from "../../assets/menu-icon.png";
 import { Link } from "react-scroll";
 import { motion } from "motion/react";
@@ -9,7 +8,6 @@ import { Link as RouterLink } from "react-router-dom";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { IconButton } from "@mui/material";
 import WhatAppButton from "../../Components/Whatsappicon/WhatsAppButton";
-// import InstantNavIcon from "../../Components/InstantCall/InstantNavIcon";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -53,13 +51,6 @@ const Navbar = () => {
              Facade Services
           </Link>
         </li>
-        {/* 
-        <li><Link to="glassfacade" smooth={true} offset={-260} duration={500}>Glass Facade</Link></li>
-        <li><Link to="hplcladding" smooth={true} offset={-260} duration={500}>HPL Cladding</Link></li>
-        <li><Link to="acpcladding" smooth={true} offset={-260} duration={500}>ACP Cladding</Link></li>
-        <li><Link to="baffleceiling" smooth={true} offset={-260} duration={500}>Baffle Ceiling</Link></li>
-         <li><Link to="facadedesigning" smooth={true} offset={-260} duration={500}>Facade Designing</Link></li> */}
-
         <li>
           <Link to="about" smooth={true} offset={-150} duration={500}>
             Facade Designs
@@ -77,13 +68,8 @@ const Navbar = () => {
           <RouterLink to="/productsList">Products</RouterLink>
         </li>
       </ul>
-
-      {/* <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu} style={{zIndex: 1500, }}/> */}
-
       <div className="right-icons">
-        {/* <InstantNavIcon /> */}
         <WhatAppButton />
-
         <IconButton
           component="a"
           href={`tel:${phoneNumber}`}

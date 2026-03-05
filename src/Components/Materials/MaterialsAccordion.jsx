@@ -16,7 +16,7 @@ const data = [
     items: [
       "Century High Pressure Laminates",
       "Greenlam High Pressure Laminates",
-      "ThunderX High Pressure Laminates",
+      "Thunderx High Pressure Laminates",
       "Fundermax High Pressure Laminates",
       "Pride High Pressure Laminates",
       "Merino High Pressure Laminates",

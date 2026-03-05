@@ -6,7 +6,7 @@ import "./WhatsAppButton.css";
 function WhatsAppButton() {
 
   const phoneNumber = "917777007360";
-  const message = `Dear EMAAR,
+  const message = `Dear FACADES,
   I'm interested in one of your properties. Would appreciate if you can get back to me soon.Thank you.`;
 
 
