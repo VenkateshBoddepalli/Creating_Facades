@@ -9,6 +9,7 @@ import gallery_3 from '../../assets/gallery-3.png'
 import gallery_4 from '../../assets/gallery-4.png'
 import { motion } from "motion/react";
 import dark_arrow from '../../assets/dark-arrow.png'
+import ScrollToTop from "../../scrollToTop"
 
 import { useNavigate } from "react-router-dom";
 
@@ -53,6 +54,7 @@ const Projects = () => {
 
   return (
     <>
+    <ScrollToTop />
     {/* <button className="product_bt"
   onClick={() => navigate("/")}
   style={{
