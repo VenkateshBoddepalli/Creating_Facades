@@ -31,18 +31,20 @@
 /* Social Icons */
 .footer-social {
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 
-.footer-social a {
+.footer-social button {
   color: #222;
   font-size: 18px;
   transition: 0.3s ease;
+  border: none;
 }
 
-.footer-social a:hover {
+.footer-social button:hover {
   color: #000;
   transform: translateY(-10px);
+  border: none;
 }
 
 /* Subscribe Section */

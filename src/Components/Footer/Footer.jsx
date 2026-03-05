@@ -24,11 +24,11 @@ const Footer = () => {
 
         {/* Social Icons */}
         <div className="footer-social">
-          <a href="#"><FaFacebookF /></a>
-          <a href="#"><FaXTwitter /></a>
-          <a href="#"><FaYoutube /></a>
-          <a href="#"><FaInstagram /></a>
-          <a href="#"><FaLinkedinIn /></a>
+          <button href=""><FaFacebookF /></button>
+          <button href=""><FaXTwitter /></button>
+          <button href=""><FaYoutube /></button>
+          <button href=""><FaInstagram /></button>
+          <button href=""><FaLinkedinIn /></button>
         </div>
 
         {/* Subscribe Section */}
