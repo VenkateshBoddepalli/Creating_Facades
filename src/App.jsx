@@ -21,14 +21,14 @@ const App = () => {
 
   return (
     <>
+     <ScrollToTop />
+     <Navbar />
       <Routes>
         {/* Home Page */}
         <Route
           path="/"
           element={
             <>
-              <ScrollToTop />
-              <Navbar />
               <Hero />
               <div className="container">
                 <Title

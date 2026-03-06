@@ -5,7 +5,7 @@ import about_img from '../../assets/about.png'
 
 const About = ({setPlayState}) => {
   return (
-    <div className='about'>
+    <div className='about'id="about">
       <div className="about-left">
         <h1>25</h1>
         <span>Years of Experience</span>

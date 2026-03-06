@@ -45,7 +45,7 @@ const Contact = ({closeModal}) => {
 
 
   return (
-    <div className='contact'>
+    <div className='contact' id="contact">
       <div className="contact-col">
         <h3>Send us a message <img src={msg_icon} alt="" /></h3>
         <p>Do youn have any project or Query ? Connect with us for projects, queries, and expert guidance. Your feedback, questions, and suggestions are important to us as we strive to provide exceptional service to our university community.</p>

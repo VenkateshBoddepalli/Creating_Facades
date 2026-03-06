@@ -10,6 +10,7 @@ import gallery_4 from '../../assets/gallery-4.png'
 import { motion } from "motion/react";
 import dark_arrow from '../../assets/dark-arrow.png'
 import ScrollToTop from "../../scrollToTop"
+// import Navbar from "../Navbar/Navbar"
 
 import { useNavigate } from "react-router-dom";
 
@@ -55,6 +56,7 @@ const Projects = () => {
   return (
     <>
     <ScrollToTop />
+    {/* <Navbar /> */}
     {/* <button className="product_bt"
   onClick={() => navigate("/")}
   style={{
@@ -72,7 +74,7 @@ const Projects = () => {
 >
   ← Back
       </button> */}
-     <motion.div initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} transition={{duration: 0.5, delay:0.7}} viewport={{once:true}} className='hero container'>
+     <motion.div id="project"initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} transition={{duration: 0.5, delay:0.7}} viewport={{once:true}} className='hero container'>
       <div className="hero-text">
         <h1>See Our Projects</h1>
         <p>We design your space with intelligent planning, modern aesthetics, and precise execution.</p>

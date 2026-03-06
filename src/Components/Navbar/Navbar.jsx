@@ -42,24 +42,28 @@ const Navbar = () => {
       <img src={logo} alt="" className="logo" />
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
-          <Link to="hero" smooth={true} offset={0} duration={500}>
+          {/* <Link to="hero" smooth={true} offset={0} duration={500}>
             Home
-          </Link>
+          </Link> */}
+          <RouterLink to="/">Home</RouterLink>
         </li>
         <li>
-          <Link to="services" smooth={true} offset={-260} duration={500}>
+          {/* <Link to="services" smooth={true} offset={-260} duration={500}>
              Facade Services
-          </Link>
+          </Link> */}
+          <RouterLink to="/#services">Facade Services</RouterLink>
         </li>
         <li>
-          <Link to="about" smooth={true} offset={-150} duration={500}>
+          {/* <Link to="about" smooth={true} offset={-150} duration={500}>
             Facade Designs
-          </Link>
+          </Link> */}
+          <RouterLink to="/#about">Facade Designs</RouterLink>
         </li>
         <li>
-          <Link to="project" smooth={true} offset={-260} duration={500}>
+          {/* <Link to="project" smooth={true} offset={-260} duration={500}>
             Projects
-          </Link>
+          </Link> */}
+          <RouterLink to="/#project">Projects</RouterLink>
         </li>
         <li>
            <RouterLink to="/products">Latest Launches</RouterLink>
@@ -77,15 +81,16 @@ const Navbar = () => {
         >
           <PhoneIcon />
         </IconButton>
-   <Link
+   {/* <Link
     to="contact"
     smooth={true}
-    offset={-260}
+    offset={-180}
     duration={500}
     className="nav-contact-btn"
   >
     Get In Touch
-  </Link>
+  </Link> */}
+  <RouterLink to="/#contact" className="nav-contact-btn">Get In Touch</RouterLink>
       </div>
     </motion.nav>
   );

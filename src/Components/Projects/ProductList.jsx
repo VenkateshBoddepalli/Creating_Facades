@@ -11,8 +11,9 @@ const ProductList = () => {
   const [activeTab, setActiveTab] = useState("products");
 
   return (
-    <div className="product-container">
-      <h2 className="title">Our Solutions</h2>
+   <div className="productdiv">
+     <div className="product-container">
+      <h2 className="title" style={{color:"white"}}>Our Solutions</h2>
 
       {/* Buttons */}
       <div className="button-group">
@@ -122,6 +123,7 @@ const ProductList = () => {
         )}
       </div>
     </div>
+   </div>
   );
 };
 

@@ -12,7 +12,7 @@ const Programs = () => {
     <div className='programs' id='services'>
       <div className="program">
         <img src={program_1} alt="" />
-         <strong className="strong-text">We create functional and visually appealing interior spaces tailored to your lifestyle and business needs.</strong>
+         <p className="text">We create functional and visually appealing interior spaces tailored to your lifestyle and business needs.</p>
        
         <div className="caption">
             <img src={program_icon_1} alt="" />
@@ -21,7 +21,7 @@ const Programs = () => {
       </div>
       <div className="program">
         <img src={program_2} alt="" />
-        <strong className="strong-text"> Our work combine modern materials, precise engineering, and weather-resistant systems suitable for Indian conditions.</strong>
+        <p className="text"> Our work precise engineering, and weather-resistant systems suitable for Indian conditions.</p>
        
         <div className="caption">
             <img src={program_icon_2} alt="" />
@@ -30,7 +30,7 @@ const Programs = () => {
       </div>
       <div className="program">
         <img src={program_3} alt="" />
-        <strong className="strong-text">Engineering-focused designs that ensure strength, load capacity, and compliance with safety norms.</strong>
+        <p className="text">Engineering-focused designs that ensure strength, load capacity, and compliance with safety norms.</p>
        
         <div className="caption">
             <img src={program_icon_3} alt="" />

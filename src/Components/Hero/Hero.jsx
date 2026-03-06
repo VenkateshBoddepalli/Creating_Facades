@@ -10,7 +10,7 @@ const Hero = () => {
   const navigate = useNavigate();
   return (
     <>
-    <motion.div initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} transition={{duration: 0.5, delay:0.7}} viewport={{once:true}} className='hero container'>
+    <motion.div id="hero" initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} transition={{duration: 0.5, delay:0.7}} viewport={{once:true}} className='hero container'>
       <div className="hero-text">
         <h1>We DESIGN YOUR SPACE</h1>
         <p>We design your space with intelligent planning, modern aesthetics, and precise execution.</p>
