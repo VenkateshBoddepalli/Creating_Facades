@@ -20,7 +20,7 @@ function WhatsAppButton() {
 
   return (
   <IconButton onClick={handleClick} className="whatsapp-btn">
-    <WhatsAppIcon className="whatsapp-icon" />
+    <WhatsAppIcon className="whatsapp-icon" style={{ color: 'white' }} />
   </IconButton>
   );
 }

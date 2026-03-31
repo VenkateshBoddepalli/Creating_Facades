@@ -1,5 +1,4 @@
 /* ================= NAVBAR BASE ================= */
-
 nav {
     width: 100%;
     color: #fff;
@@ -34,12 +33,22 @@ nav {
 }
 
 .logo {
-    width: 100px;          /* good desktop size */
-    height: auto;          /* keep aspect ratio */
+    width: 110px;        
+    height: auto;          
     object-fit: contain;
     transition: transform 0.3s ease, opacity 0.3s ease;
     cursor: pointer;
     border-radius:30px;
+    margin-left: -55px;
+}
+.cftext{
+    font-weight: bolder;
+    margin-left: -70px;
+    /* background: linear-gradient(150deg, green, yellow, white); */
+    background: linear-gradient(90deg, #02ca30, #ffc001, #e6e3da);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Smooth hover effect */
@@ -228,6 +237,10 @@ nav ul li:hover::after {
         height: 65px;      
         width: auto;       
         object-fit: contain;
-        margin-left: -115px;  
+        margin-left: -115px;
+    }
+    .cftext{
+        margin-left: 0px;
+        display: none;
     }
 }
