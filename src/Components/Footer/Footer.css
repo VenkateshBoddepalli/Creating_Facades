@@ -19,13 +19,15 @@
   letter-spacing: 3px;
   color: #333;
 }
-.footerimg{
-    width: 100px;  
-    height: auto;          
-    object-fit: contain;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    cursor: pointer;
-    border-radius:30px;
+.footerimg {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+  cursor: pointer;
+  border-radius: 30px;
 }
 
 /* Social Icons */
@@ -34,17 +36,24 @@
   gap: 40px;
 }
 
-.footer-social button {
+.footer-social a {
   color: #222;
   font-size: 18px;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
   border: none;
+  background: transparent;
+  padding: 9px;
+  border-radius: 35%;
+  cursor: pointer;
 }
 
-.footer-social button:hover {
+.footer-social a:hover {
   color: #000;
   transform: translateY(-10px);
   border: none;
+  background-color: #212EA0;
+  color: #fff; 
+  transform: translateY(-5px);
 }
 
 /* Subscribe Section */
@@ -79,7 +88,7 @@
 .footer-subscribe button:hover {
   background: #7a7a7a;
 }
-.footers{
+.footers {
   margin-top: 25px;
 }
 
@@ -89,7 +98,7 @@
   letter-spacing: 0px;
   color: #050507;
   margin-top: -22px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .facades {
   font-size: 18px;
@@ -97,7 +106,7 @@
   letter-spacing: 0;
   color: #050408;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* .terPri{
@@ -137,7 +146,7 @@
     letter-spacing: 0px;
   }
 
-  .terPri{
-  margin-top: 15px;
-}
+  .terPri {
+    margin-top: 15px;
+  }
 }

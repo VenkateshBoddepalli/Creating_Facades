@@ -14,21 +14,20 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-
         {/* Logo Section */}
         <div className="footer-logo">
-          <img src={logo} alt="Creative Facades Logo"  className="footerimg"/>
+          <img src={logo} alt="Creative Facades Logo" className="footerimg" />
           <p className="creative">CREATIVE</p>
           <p className="facades">FACADES</p>
         </div>
 
         {/* Social Icons */}
         <div className="footer-social">
-          <button href=""><FaFacebookF /></button>
-          <button href=""><FaXTwitter /></button>
-          <button href=""><FaYoutube /></button>
-          <button href=""><FaInstagram /></button>
-          <button href=""><FaLinkedinIn /></button>
+            {/* <a href="" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a> */}
+            <a href="https://x.com/CreativeFacade" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
+            <a href="https://www.youtube.com/@CreativeFacades" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+            <a href="https://www.instagram.com/creative.facades" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a href="https://www.linkedin.com/in/creativefacades/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
         </div>
 
         {/* Subscribe Section */}
@@ -38,7 +37,6 @@ const Footer = () => {
             SUBSCRIBE <img src={white_arrow} alt="arrow" />
           </button>
         </div>
-
       </div>
 
       <div className="footers">
@@ -57,7 +55,6 @@ const Footer = () => {
           </a>
         </div>
       </div> */}
-
     </footer>
   );
 };
