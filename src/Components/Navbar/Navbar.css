@@ -237,7 +237,7 @@ nav ul li:hover::after {
         height: 65px;      
         width: auto;       
         object-fit: contain;
-        margin-left: -115px;
+        margin-left: -155px;
     }
     .cftext{
         margin-left: 0px;
