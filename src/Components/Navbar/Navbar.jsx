@@ -40,18 +40,15 @@ const Navbar = () => {
         onClick={toggleMenu}
         style={{ zIndex: 1500 }}
       />
-      {/* <img src={logo} alt="" className="logo" /> */}
       <RouterLink to="/" style={{display:"flex", alignItems:"center", gap:"15px"}}>
       <img src={logo} alt="logo" className="logo" />
-      <div className="cftext">Creative Facades</div>
       </RouterLink>
-      {/* <div className="cftext">Creative Facades</div> */}
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
           {/* <Link to="hero" smooth={true} offset={0} duration={500}>
             Home
           </Link> */}
-          <RouterLink to="/#about">About US</RouterLink>
+          <RouterLink to="/#about">About &nbsp;US</RouterLink>
         </li>
         <li>
           {/* <Link to="services" smooth={true} offset={-260} duration={500}>

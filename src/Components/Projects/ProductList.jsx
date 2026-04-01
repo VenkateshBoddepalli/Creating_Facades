@@ -76,7 +76,7 @@ const ProductList = () => {
               <WindowIcon className="icon" />
               <h3>Structural Glazing</h3>
               <p>
-                semi and unitized for thermal efficiency, natural light,
+                Semi and unitized for thermal efficiency, natural light,
                 and sleek curtain wall designs.
               </p>
             </div>
