@@ -74,9 +74,9 @@ const ProductList = () => {
 
              <div className="card">
               <WindowIcon className="icon" />
-              <h3>Baffle Ceiling</h3>
+              <h3>Structural Glazing</h3>
               <p>
-                IGUs and tinted glass for thermal efficiency, natural light,
+                semi and unitized for thermal efficiency, natural light,
                 and sleek curtain wall designs.
               </p>
             </div>

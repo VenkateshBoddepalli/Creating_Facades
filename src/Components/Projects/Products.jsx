@@ -117,7 +117,7 @@ const Projects = () => {
       {/* FOOTER */}
       <footer>
         <div className="footer-bottom">
-          © {new Date().getFullYear()} Fortune Faced. All Rights Reserved.
+          © {new Date().getFullYear()} Creative Facades. All Rights Reserved.
         </div>
       </footer>
     </>
