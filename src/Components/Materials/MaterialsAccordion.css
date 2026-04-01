@@ -1,6 +1,8 @@
 /* Sticky Wrapper */
+/* Hide by default (desktop) */
 .materials-wrapper {
   display: flex;
+  display: none;
   justify-content: center;
   margin-top: 40px;
   padding: 0 16px;

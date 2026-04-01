@@ -43,7 +43,7 @@ nav {
 }
 .cftext{
     font-weight: bolder;
-    margin-left: -70px;
+    margin-left: -96px;
     /* background: linear-gradient(150deg, green, yellow, white); */
     background: linear-gradient(90deg, #02ca30, #ffc001, #e6e3da);
 
@@ -160,6 +160,10 @@ nav ul li:hover::after {
     nav ul {
         gap: 25px;
     }
+    .cftext{
+        margin-left: 0px;
+        display: none;
+    }
 }
 
 /* ========================= */
@@ -223,11 +227,19 @@ nav ul li:hover::after {
     .phone-btn {
         padding: 4px !important;
     }
+    .cftext{
+        margin-left: 0px;
+        display: none;
+    }
 }
 
 @media (max-width: 1000px) {
     .logo {
         height: 48px;
+    }
+    .cftext{
+        margin-left: 0px;
+        display: none;
     }
 }
 

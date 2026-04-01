@@ -41,7 +41,7 @@ const App = () => {
                 <Campus />
                 <Title subTitle="TESTIMONIALS" title="What Designer Says" />
                 <Testimonials />
-                <Title subTitle="Contact Us" title="Get in Touch" />
+                <Title subTitle="Contact Us" title="" />
                 <Contact />
                 <Footer />
               </div>

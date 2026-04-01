@@ -48,7 +48,7 @@ const Contact = ({closeModal}) => {
     <div className='contact' id="contact">
       <div className="contact-col">
         <h3>Send us a message <img src={msg_icon} alt="" /></h3>
-        <p>Do youn have any project or Query ? Connect with us for projects, queries, and expert guidance. Your feedback, questions, and suggestions are important to us as we strive to provide exceptional service to our university community.</p>
+        <p>Do you have any project or Query ? Connect with us for projects, queries, and expert guidance. Your feedback, questions, and suggestions are important to us as we strive to provide exceptional service to our university community.</p>
         <ul>
             <li><img src={mail_icon} alt="" />info@creativefacades.in</li>
             <li><img src={phone_icon} alt="" />+91 7777 007 360 / 9676 3917 76</li>
