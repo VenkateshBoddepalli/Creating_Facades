@@ -1,5 +1,4 @@
 /* Sticky Wrapper */
-/* Hide by default (desktop) */
 .materials-wrapper {
   display: flex;
   /* display: none; */
@@ -49,6 +48,7 @@
   color: #1e293b;
   text-align: center;
   margin-top: 10px !important;
+  width: 300px;
 }
 
 /* Arrow */
