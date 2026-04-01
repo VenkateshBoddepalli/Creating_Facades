@@ -110,6 +110,8 @@ const MaterialsAccordion = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
         transitionDuration={300}
+        disableScrollLock={true} 
+        keepMounted  
         PaperProps={{
           className: "dropdown-menu",
         }}
@@ -120,7 +122,7 @@ const MaterialsAccordion = () => {
               {item}
             </MenuItem>
           ))}
-      </Menu>
+      </Menu >
     </Box>
   );
 };

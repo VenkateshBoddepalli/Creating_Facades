@@ -41,10 +41,11 @@ const Navbar = () => {
         style={{ zIndex: 1500 }}
       />
       {/* <img src={logo} alt="" className="logo" /> */}
-      <RouterLink to="/">
+      <RouterLink to="/" style={{display:"flex", alignItems:"center", gap:"15px"}}>
       <img src={logo} alt="logo" className="logo" />
-      </RouterLink>
       <div className="cftext">Creative Facades</div>
+      </RouterLink>
+      {/* <div className="cftext">Creative Facades</div> */}
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
           {/* <Link to="hero" smooth={true} offset={0} duration={500}>
