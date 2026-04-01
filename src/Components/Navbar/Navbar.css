@@ -43,7 +43,7 @@ nav {
 }
 .cftext{
     font-weight: bolder;
-    margin-left: -38px;
+    margin-left: -60px;
     /* background: linear-gradient(150deg, green, yellow, white); */
     background: linear-gradient(90deg, #02ca30, #ffc001, #e6e3da);
 
@@ -255,15 +255,5 @@ nav ul li:hover::after {
         margin-left:0px;
         display: none;
     }
-
-    @media (max-width: 1366px) {
-    .logo {
-        width: 100px;
-    }
-
-    .cftext {
-        font-size: 14px;
-    }
-}
 
 }
