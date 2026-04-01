@@ -2,7 +2,7 @@
 /* Hide by default (desktop) */
 .materials-wrapper {
   display: flex;
-  display: none;
+  /* display: none; */
   justify-content: center;
   margin-top: 40px;
   padding: 0 16px;
@@ -10,7 +10,7 @@
   top: 80px;
   z-index: 100;
   height: 50px;
-  width: 900px;
+  width: 1050px;
 }
 
 /* Main Container */
@@ -81,6 +81,7 @@
 
 .materials-wrapper {
   display: flex;
+  display: none;
   justify-content: center;
   padding: 0 16px;
   position: sticky;

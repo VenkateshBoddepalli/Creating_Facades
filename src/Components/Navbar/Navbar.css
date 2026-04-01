@@ -43,7 +43,7 @@ nav {
 }
 .cftext{
     font-weight: bolder;
-    margin-left: -96px;
+    margin-left: -68px;
     /* background: linear-gradient(150deg, green, yellow, white); */
     background: linear-gradient(90deg, #02ca30, #ffc001, #e6e3da);
 
@@ -249,10 +249,10 @@ nav ul li:hover::after {
         height: 65px;      
         width: auto;       
         object-fit: contain;
-        margin-left: -155px;
+        margin-left: -140px;
     }
     .cftext{
-        margin-left: 0px;
+        margin-left:0px;
         display: none;
     }
 }

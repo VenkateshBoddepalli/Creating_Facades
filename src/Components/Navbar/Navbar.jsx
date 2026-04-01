@@ -40,26 +40,29 @@ const Navbar = () => {
         onClick={toggleMenu}
         style={{ zIndex: 1500 }}
       />
-      <img src={logo} alt="" className="logo" />
+      {/* <img src={logo} alt="" className="logo" /> */}
+      <RouterLink to="/">
+      <img src={logo} alt="logo" className="logo" />
+      </RouterLink>
       <div className="cftext">Creative Facades</div>
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
           {/* <Link to="hero" smooth={true} offset={0} duration={500}>
             Home
           </Link> */}
-          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/#about">About US</RouterLink>
         </li>
         <li>
           {/* <Link to="services" smooth={true} offset={-260} duration={500}>
              Facade Services
           </Link> */}
-          <RouterLink to="/#services">Facade Services</RouterLink>
+          <RouterLink to="/#services">Services</RouterLink>
         </li>
         <li>
           {/* <Link to="about" smooth={true} offset={-150} duration={500}>
             Facade Designs
           </Link> */}
-          <RouterLink to="/#about">Facade Designs</RouterLink>
+          <RouterLink to="/#about">Designning & Engg</RouterLink>
         </li>
         <li>
           {/* <Link to="project" smooth={true} offset={-260} duration={500}>

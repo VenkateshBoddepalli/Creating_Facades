@@ -36,14 +36,14 @@ const data = [
     ],
   },
   {
-    title: "Baffle Ceilings",
+    title: "Structural Glazing & Associated",
     items: [
-      "LD Square",
-      "Gypstonite",
-      "Hunter Douglas",
-      "Amstrong",
-      "Vindisil Architectural Products",
-      "Metalium Multitech Products",
+      "Unitized glazing",
+      "Semi unitized Glazing",
+      "Spider glazing & Tension cable glazing",
+      "Canopies, free form structures & allied works",
+      "All forms of cladding & Railings",
+      "Structural steel",
     ],
   },
 ];
